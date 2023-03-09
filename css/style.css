@@ -95,6 +95,7 @@ body {
 .heading-primary-main {
   font-size: 5.8rem;
   font-weight: 600;
+  line-height: 1.2;
   display: block;
   margin-bottom: 2rem;
   animation: toTheLeft 1s ease-in;
