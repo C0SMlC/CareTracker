@@ -59,7 +59,30 @@ navbar.addEventListener("click", function (e) {
   }
 });
 
-//Form
+const footer = document.querySelector(".footer__nav");
+footer.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target.classList.contains("footer__link")) {
+    const id = e.target.getAttribute("href");
+    document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+const sectionHow = document.querySelector(".section-how");
+const learnMorebtn = document.querySelector(".learn-more");
+
+learnMorebtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  sectionHow.scrollIntoView({ behavior: "smooth" });
+});
+
+const toFooter = document.querySelector(".footer");
+const startbtn = document.querySelector(".start");
+
+startbtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  toFooter.scrollIntoView({ behavior: "smooth" });
+});
 
 const form = document.getElementById("cta-form");
 

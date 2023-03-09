@@ -23,8 +23,8 @@ html {
 }
 
 body {
-  padding: 1.2rem;
   font-family: "Rubik", sans-serif;
+  padding: 1.2rem;
   background-color: #e8eaf6;
 }
 
@@ -243,10 +243,12 @@ body {
 }
 
 .operations__header {
-  font-size: 2.25rem;
+  font-size: 3.2rem;
   font-weight: 500;
   align-self: center;
   line-height: 1.5;
+  color: black;
+  font-weight: 700;
 }
 
 .operations__icon {
@@ -262,6 +264,7 @@ body {
   font-size: 2rem;
   grid-column: 2;
   line-height: 1.6;
+  color: rgb(26, 26, 26);
 }
 
 .operations__icon--1 {
@@ -291,8 +294,6 @@ body {
 
 html,
 body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -385,4 +386,71 @@ body {
   grid-column: 1/-1;
   margin-top: 2rem;
   background-color: #fd424b;
+}
+
+/* ************************************ 
+   ___________Footer_____________ 
+
+   ************************************ */
+/* FOOTER */
+.footer {
+  padding: 10rem 0rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(193, 233, 251, 0.939),
+    rgb(160, 196, 253)
+  );
+  color: #333;
+}
+
+.footer__nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.footer__item {
+  margin-right: 4rem;
+  text-decoration: none;
+}
+
+.footer__link {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.5s;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.footer__logo {
+  height: 5rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+}
+
+.footer__copyright {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer__copyright .footer__link {
+  font-size: 1.4rem;
+}
+
+.twitter-link {
+  padding: 0 0.5rem;
+}
+
+.github-link {
+  padding: 1.5rem 0.3rem;
+}
+
+.footer__link:hover {
+  transform: scale(1.2) skew(-15deg);
+  background-color: rgba(160, 196, 253, 0.741);
 }

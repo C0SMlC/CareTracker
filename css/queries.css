@@ -177,6 +177,11 @@
   .step-img-box:nth-child(6) {
     grid-row: 5;
   }
+
+  .step-text-box {
+    margin-bottom: 15rem;
+  }
+
   .main-nav {
     visibility: hidden;
   }
@@ -237,9 +242,13 @@
     grid-row: 1;
     background-position-y: 29%;
   }
+
+  .operations__header {
+    font-size: 2.8rem;
+  }
 }
 
-@media (max-width: 25em) {
+@media (max-width: 27em) {
   html {
     font-size: 35%;
   }
@@ -260,5 +269,13 @@
     row-gap: 4rem;
     align-items: center;
     margin-top: 8rem;
+  }
+
+  .operations__header {
+    font-size: 2.2rem;
+  }
+
+  .footer__link {
+    font-size: 1.2rem;
   }
 }
