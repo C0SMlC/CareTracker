@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script defer src="script.js"></script>
+
+    <title>Caretracker</title>
+  </head>
+  <body>
+    <section class="part section-hero">
+      <header class="navbar">
+        <a class="header-image-box" href="#">
+          <img class="logo" alt="Caretracker logo" src="img/brand-logo.png" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li>
+              <a class="main-nav-link" href="#section-how">How it works</a>
+            </li>
+            <li>
+              <a class="main-nav-link" href="#section-features">Features</a>
+            </li>
+            <li><a class="main-nav-link nav-cta" href="#cta">Join us</a></li>
+            <li>
+              <a class="main-nav-link nav-cta" href="#cta">Installation</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="section-hero-text">
+        <h1 class="heading-primary">
+          <span class="heading-primary-main">
+            Healthy habits pay off with CareTracker
+          </span>
+          <span class="heading-primary-sub">
+            A simple way to keep track of your health, and earn rewards
+          </span>
+        </h1>
+        <a href="#" class="btn start">Start Earning</a>
+        <a href="#" class="btn learn-more">Learn More &darr;</a>
+      </div>
+    </section>
+
+    <section class="part section-how" id="section-how">
+      <div class="container">
+        <span class="subheading">How it works</span>
+        <h2 class="heading-secondary">Benefit your health in 3 easy steps</h2>
+      </div>
+
+      <div class="container grid grid--2-cols grid--center-v">
+        <!-- STEP 01 -->
+        <div class="step-text-box">
+          <p class="step-number">01</p>
+          <h3 class="heading-tertiary">Download and Install CareTracker</h3>
+          <p class="step-description">
+            CareTracker is available for free on both iOS and Android devices.
+            Once downloaded, simply follow the prompts to install the app. After
+            installation, you'll need to create an account or sign in with an
+            existing account.
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img
+            src="img/download.jpg"
+            class="step-img"
+            alt="iPhone app
+            preferences selection screen"
+          />
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="step-img-box">
+          <img
+            src="img/phonewatch.png"
+            class="step-img"
+            alt="iPhone app
+            preferences selection screen"
+          />
+        </div>
+        <div class="step-text-box">
+          <p class="step-number">02</p>
+          <h3 class="heading-tertiary">Connect Your Fitness Tracker</h3>
+          <p class="step-description">
+            CareTracker connects with a variety of fitness trackers. To connect
+            your fitness tracker, Follow the prompts to connect your device and
+            grant the necessary permissions.
+          </p>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="step-text-box">
+          <p class="step-number">03</p>
+          <h3 class="heading-tertiary">Start Earning Money</h3>
+          <p class="step-description">
+            Once your device is connected, CareTracker will begin tracking your
+            steps automatically. Join challenges of your choice, compete with
+            other players, and earn a reward.
+          </p>
+        </div>
+        <div class="step-img-box">
+          <img
+            src="img/reward.jpg"
+            class="step-img"
+            alt="iPhone app
+            delivery screen"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="part section-features" id="section-features">
+      <div class="section__title container">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">Your health is our top priority.</h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button class="btn operations__tab operations__tab--1" data-tab="1">
+            Step Tracking
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            Rewards Program
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            Pocket Friendly
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <ion-icon name="medkit" class="tabbedicon"></ion-icon>
+          </div>
+          <h5 class="operations__header">After all health is what matters</h5>
+          <p>
+            Caretracker uses your smartphone or connected fitness tracker to
+            automatically track your steps throughout the day. This feature
+            allows you to easily monitor your daily activity level and see how
+            close you are to meeting your fitness goals.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <ion-icon name="trophy" class="tabbedicon"></ion-icon>
+          </div>
+          <h5 class="operations__header">
+            Join challenges of your choice, compete with other players
+          </h5>
+          <p>
+            Caretracker provides a platform for health enthusiasts to compete
+            with one other, the challenge based system is what makes it so
+            special, beat other players and earn rewards.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <ion-icon name="cash" class="tabbedicon"></ion-icon>
+          </div>
+          <h5 class="operations__header">
+            Yeah, you read it right, you get reward to keep yourself healthy.
+          </h5>
+          <p>
+            CareTracker offers a rewards program where you can earn cash rewards
+            for every step you take. The more you walk, the more you earn, which
+            can be redeemed for cash or gift cards. This feature helps
+            incentivize healthy habits and encourages you to stay active.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cta" id="cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">Willing to work with us?</h2>
+            <p class="cta-text">
+              At CareTracker, we believe that partnerships are key to improving
+              the health and well-being of our users. That's why we're always
+              looking for like-minded organizations and companies to collaborate
+              with. fill the deatils, We'll get back to you as soon as possible.
+            </p>
+
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  type="text"
+                  placeholder="John Smith"
+                  name="full-name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="me@example.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <button class="btn btn--form">Send</button>
+            </form>
+          </div>
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="Woman enjoying food"
+          ></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
