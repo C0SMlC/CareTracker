@@ -1,5 +1,7 @@
 /// Tabbed Component
 
+"use strict";
+
 const tabs = document.querySelectorAll(".operations__tab");
 const tabsContainer = document.querySelector(".operations__tab-container");
 const tabsContent = document.querySelectorAll(".operations__content");
@@ -107,3 +109,7 @@ form.addEventListener("submit", (e) => {
       console.error("Error:", error);
     });
 });
+
+// popup message
+
+

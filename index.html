@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/queries.css" />
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script defer src="script.js"></script>
+    <!-- <script defer src="nodemailer.js"></script> -->
 
     <title>Caretracker</title>
   </head>
@@ -185,6 +186,11 @@
 
     <section class="section-cta" id="cta">
       <div class="container">
+        <div class="popup_msg">
+          <p class="popup_msg_text">
+            Message is sent successfully, we will reach to you soon😊
+          </p>
+        </div>
         <div class="cta">
           <div class="cta-text-box">
             <h2 class="heading-secondary">Willing to work with us?</h2>
@@ -195,7 +201,11 @@
               with. fill the deatils, We'll get back to you as soon as possible.
             </p>
 
-            <form class="cta-form" name="sign-up" netlify>
+            <form
+              class="cta-form"
+              name="sign-up"
+              onsubmit="sendMail(); reset(); return false;"
+            >
               <div>
                 <label for="full-name">Full Name</label>
                 <input
@@ -263,5 +273,33 @@
         </a>
       </p>
     </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const popup_container = document.querySelector(".popup_msg");
+      const popup_msg = document.querySelector(".popup_msg_text");
+
+      function sendMail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "caretrackerhelp@outlook.com",
+          Password: "AA023DADD1D6BBEB94D0C4B44B39D2FA045E",
+          To: "infocaretracker@gmail.com",
+          From: "caretrackerhelp@outlook.com",
+          Subject: `${
+            document.getElementById("full-name").value
+          }, Wants to talk`,
+          Body: `Mr/Mrs ${
+            document.getElementById("full-name").value
+          }, Wants to talk, contact them at ${
+            document.getElementById("email").value
+          }. \nHave a nice day :)`,
+        }).then((message) => {
+          popup_container.classList.add("show");
+          setTimeout(() => {
+            popup_container.classList.remove("show");
+          }, 3000);
+        });
+      }
+    </script>
   </body>
 </html>

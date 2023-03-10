@@ -87,7 +87,7 @@ body {
 }
 
 .heading-primary {
-  color: #6f3506;
+  color: #3e2723;
   width: 40%;
   display: block;
 }
@@ -98,6 +98,7 @@ body {
   display: block;
   margin-bottom: 2rem;
   animation: toTheLeft 1s ease-in;
+  line-height: 1.2;
 }
 
 .heading-primary-sub {
@@ -300,6 +301,20 @@ body {
 /**************************/
 /* CTA SECTION */
 /**************************/
+
+.popup_msg {
+  background-color: #4bbb7d;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
 
 .section-cta {
   padding: 18rem 0 16.8rem;
